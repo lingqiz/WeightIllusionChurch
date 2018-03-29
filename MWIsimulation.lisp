@@ -25,4 +25,5 @@
 ))
 
 (mean samples)
+(display samples)
 
