@@ -1,5 +1,5 @@
-(define para1 (list 0.3 0.32 0.34 0.36 0.38 0.4 0.42 0.44 0.46 0.48 0.50))
-(define para2 (list 0.05 0.06 0.07 0.08 0.09 0.1 0.11 0.12 0.13 0.14 0.15))
+(define para1 (list 0.05 0.06 0.07 0.08 0.09 0.1 0.11 0.12 0.13 0.14 0.15))
+(define para2 (list 0.3 0.32 0.34 0.36 0.38 0.4 0.42 0.44 0.46 0.48 0.50))
 
 (define (listIter paraList para1 para2)
   (if (equal? (length para2) 0) 
