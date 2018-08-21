@@ -8,12 +8,12 @@
  ;Prior for V. Same across all three cases; Independent with the density prior 
  ;In size-weight illusion the volumn and density priors are dependent  
            
- (define Y (gaussian V 0.31)) ;0.31
+ (define Y (gaussian V 0.3)) ;0.3
  ;P(Y|V) ~ N(y; V, sigma_y)
          
  (define D 
    (if (equal? R 'R0) (gaussian 0 0.1)         ;Sharp Density Prior
-        (if (equal? R 'R1) (gaussian 0.6 0.6)    ;Wide Density Prior 
+        (if (equal? R 'R1) (gaussian 0.6 0.6)  ;Wide Density Prior 
             (gaussian -1.946 0.1)) ))          ;Estimated From Material Cue 
  
  (define W (+ D Y))
